@@ -25,7 +25,7 @@ class AuthController extends Controller
                 'status' => false,
                 'message' => 'Proses Registrasi Gagal',
                 'data' => $validator->errors(),
-            ], 401);
+            ], 400);
         }
 
         $dataUser->name = $request->name;
